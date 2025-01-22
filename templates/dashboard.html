@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f7f9fc;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .dashboard-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .dashboard-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            padding: 20px;
+            text-align: center;
+            width: 250px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .dashboard-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .dashboard-card h2 {
+            font-size: 20px;
+            color: #6e8efb;
+            margin-bottom: 15px;
+        }
+
+        .dashboard-card a {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .dashboard-card a:hover {
+            background: linear-gradient(135deg, #a777e3, #6e8efb);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Smart Attendance System</h1>
+    </div>
+    <div class="dashboard-container">
+        <div class="dashboard-card">
+            <h2>Capture Image</h2>
+            <a href="/capture">Go</a>
+        </div>
+        <div class="dashboard-card">
+            <h2>Take Attendance</h2>
+            <a href="/attendance">Go</a>
+        </div>
+        <div class="dashboard-card">
+            <h2>Logout</h2>
+            <a href="/logout">Logout</a>
+        </div>
+    </div>
+</body>
+</html>
